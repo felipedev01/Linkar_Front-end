@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, Text, Button } from 'react-native';
+import { Container, Subtitle, Title } from 'src/styles/WelcomeScreen.styles';
 import styled from 'styled-components/native';
+
 
 const WelcomeScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   return (
@@ -15,31 +17,5 @@ const WelcomeScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   );
 };
 
-const Container = styled.View`
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  background-color: green;
-`;
-
-const Logo = styled.Image`
-  width: 150px;
-  height: 150px;
-  margin-bottom: 30px;
-`;
-
-const Title = styled.Text`
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-`;
-
-const Subtitle = styled.Text`
-  font-size: 16px;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #666;
-`;
 
 export default WelcomeScreen;
